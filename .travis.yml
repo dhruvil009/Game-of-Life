@@ -5,6 +5,13 @@ matrix:
         - 2.9.3
       jdk:
         - openjdk8
+    - language: lua
+      lua:
+        - 5.2.3
+    - language: rust
+      rust:
+        - 2.6
+
 notifications:
   email:
     - ppenmet@ncsu.edu
@@ -13,7 +20,7 @@ notifications:
     - nshukla2@ncsu.edu
 
 install:
-  - scalac GameofLife.scala
+  -
   
 script:
   - echo "ToDO"
