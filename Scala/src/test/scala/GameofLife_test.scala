@@ -1,4 +1,5 @@
 import org.scalatest._
+import src.main.scala.GameofLife
 
 import scala.Array.ofDim
 
@@ -28,6 +29,6 @@ class GameTest  extends FunSpec with Matchers  {
   it ("Computes Big Matrix Correctly") {
 //    ToDo: Sreemoyee
 
-//    new GameofLife().Live(matrix, 2, 2, 1) should be (result)
+//    new src.main.scala.GameofLife().Live(matrix, 2, 2, 1) should be (result)
   }
 }
