@@ -5,6 +5,15 @@ matrix:
         - 2.9.3
       jdk:
         - openjdk8
+      install:
+        -
+      script:
+        - echo "ToDO"
+      before_install:
+        - echo "Testing"
+      after_success:
+        - echo "Test Success"
+
     - language: lua
       lua:
         - 5.2.3
@@ -18,15 +27,3 @@ notifications:
     - sadhika2@ncsu.edu
     - sray9@ncsu.edu
     - nshukla2@ncsu.edu
-
-install:
-  -
-  
-script:
-  - echo "ToDO"
-
-before_install:
-  - echo "Testing"
-  
-after_success:
-  - echo "Test Success"
