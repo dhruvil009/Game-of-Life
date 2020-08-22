@@ -2,7 +2,7 @@ import scala.Array.ofDim
 import scala.util.Random
 
 class GameofLife {
-  def main(args: Array[String]): Array[Array[Integer]] = {
+  def Play(args: Array[String]): Array[Array[Integer]] = {
     Life(5, 5)
   }
 
