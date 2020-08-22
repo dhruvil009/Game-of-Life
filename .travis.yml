@@ -10,7 +10,7 @@ matrix:
         - 5.2.3
     - language: rust
       rust:
-        - 2.6
+        - 1.45.2
 
 notifications:
   email:
