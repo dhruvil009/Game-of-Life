@@ -1,5 +1,3 @@
-package code
-
 import scala.Array.ofDim
 import scala.util.Random
 

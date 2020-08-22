@@ -1,12 +1,11 @@
-import code.GameofLife
 import org.scalatest._
 
 import scala.Array.ofDim
 
-class GameTest extends GameofLife {
+class GameTest {
   it ("Null Population Never changes") {
     var matrix = ofDim[Integer](5, 5)
-    Live(matrix, 5, 5, 2) should be (matrix)
+    new GameofLife().Live(matrix, 5, 5, 2) should be (matrix)
   }
 
   it ("Computes Small Matrix Correctly") {
@@ -23,12 +22,12 @@ class GameTest extends GameofLife {
     result(1)(0) = 0
     result(1)(1) = 1
 
-    Live(matrix, 2, 2, 1) should be (result)
+    new GameofLife().Live(matrix, 2, 2, 1) should be (result)
   }
 
   it ("Computes Big Matrix Correctly") {
 //    ToDo: Sreemoyee
 
-//    Live(matrix, 2, 2, 1) should be (result)
+//    new GameofLife().Live(matrix, 2, 2, 1) should be (result)
   }
 }
