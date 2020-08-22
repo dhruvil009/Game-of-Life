@@ -1,10 +1,10 @@
 matrix:
   include:
     - language: scala
-    -  scala:
-      - 2.9.3
-    -  jdk:
-      - openjdk8
+      scala:
+        - 2.9.3
+      jdk:
+        - openjdk8
 notifications:
   email:
     - ppenmet@ncsu.edu
