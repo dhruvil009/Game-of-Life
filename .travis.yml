@@ -5,8 +5,6 @@ matrix:
         - 2.11.7
       jdk:
         - openjdk8
-      script:
-        - echo "ToDO"
       before_install:
         - cd Scala
         - echo "Testing"
