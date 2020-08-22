@@ -10,16 +10,36 @@ matrix:
       script:
         - echo "ToDO"
       before_install:
+        - cd Scala
         - echo "Testing"
       after_success:
         - echo "Test Success"
+#
+#    - language: lua
+#      lua:
+#        - 5.2.3
+#      install:
+#        -
+#      script:
+#        - echo "ToDO"
+#      before_install:
+#        - cd Lua
+#        - echo "Testing"
+#      after_success:
+#        - echo "Test Success"
 
-    - language: lua
-      lua:
-        - 5.2.3
     - language: rust
       rust:
         - 1.45.2
+      install:
+        -
+      script:
+        - echo "ToDO"
+      before_install:
+        - cd Rust
+        - echo "Testing"
+      after_success:
+        - echo "Test Success"
 
 notifications:
   email:
