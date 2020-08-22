@@ -4,11 +4,11 @@ import scala.Array.ofDim
 import scala.util.Random
 
 class GameofLife {
-  def main(args: Array[String]) = {
+  def main(args: Array[String]): Array[Array[Integer]] = {
     Life(5, 5)
   }
 
-  def print_matrix(generation: Array[Array[Integer]], rows: Int, cols: Int): Unit = {
+  def print_matrix(generation: Array[Array[Integer]], rows: Int, cols: Int) = {
     for (i <- 0 to rows - 1) {
       for (j <- 0 to cols - 1) {
         if (generation(i)(j) == 1)
@@ -20,7 +20,7 @@ class GameofLife {
     }
   }
 
-  def Life(rows: Int, cols: Int) = {
+  def Life(rows: Int, cols: Int): Array[Array[Integer]] = {
     var generation = ofDim[Integer](rows, cols)
     val rand = new Random(0)
     for (i <- 0 to rows - 1) {
@@ -31,9 +31,9 @@ class GameofLife {
     Live(generation, rows, cols, 5)
   }
 
-  def Live(generation: Array[Array[Integer]], rows: Int, cols: Int, gen: Int): Unit = {
+  def Live(generation: Array[Array[Integer]], rows: Int, cols: Int, gen: Int): Array[Array[Integer]] = {
     if (gen == 0)
-      return
+      return generation
     println("Generation: " + gen)
     print_matrix(generation, rows, cols)
     var nextGen = generation.map(_.clone)
