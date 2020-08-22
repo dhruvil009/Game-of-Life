@@ -1,5 +1,4 @@
 import org.scalatest._
-import src.main.scala.GameofLife
 
 import scala.Array.ofDim
 
