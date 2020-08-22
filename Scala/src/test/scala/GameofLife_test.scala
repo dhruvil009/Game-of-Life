@@ -2,7 +2,7 @@ import org.scalatest._
 
 import scala.Array.ofDim
 
-class GameTest {
+class GameTest  extends FunSpec with Matchers  {
   it ("Null Population Never changes") {
     var matrix = ofDim[Integer](5, 5)
     new GameofLife().Live(matrix, 5, 5, 2) should be (matrix)
