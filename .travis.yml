@@ -3,6 +3,8 @@ matrix:
     - language: scala
       scala:
         - 2.11.7
+      jdk:
+        - openjdk8
       before_install:
         - cd Scala
         - echo "Testing"
@@ -15,7 +17,7 @@ matrix:
 #      install:
 #        -
 #      script:
-#        - echo "ToDO"
+#        - echo "ToDo"
 #      before_install:
 #        - cd Lua
 #        - echo "Testing"
