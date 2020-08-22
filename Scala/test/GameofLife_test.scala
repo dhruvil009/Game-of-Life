@@ -9,8 +9,26 @@ class GameTest extends GameofLife {
     Live(matrix, 5, 5, 2) should be (matrix)
   }
 
-  it ("Computes Matrix Correctly") {
-    var matrix = ofDim[Integer](5, 5)
-    Live(matrix, 5, 5, 2) should be (matrix)
+  it ("Computes Small Matrix Correctly") {
+    var matrix = ofDim[Integer](2, 2)
+    matrix(0)(0) = 1
+    matrix(0)(1) = 0
+    matrix(1)(0) = 0
+    matrix(1)(1) = 1
+
+    var result = ofDim[Integer](2, 2)
+
+    result(0)(0) = 1
+    result(0)(1) = 0
+    result(1)(0) = 0
+    result(1)(1) = 1
+
+    Live(matrix, 2, 2, 1) should be (result)
+  }
+
+  it ("Computes Big Matrix Correctly") {
+//    ToDo: Sreemoyee
+
+//    Live(matrix, 2, 2, 1) should be (result)
   }
 }
