@@ -2,11 +2,9 @@ matrix:
   include:
     - language: scala
       scala:
-        - 2.9.3
+        - 2.11.7
       jdk:
         - openjdk8
-      install:
-        -
       script:
         - echo "ToDO"
       before_install:
