@@ -1,0 +1,33 @@
+matrix:
+  include:
+    - language: scala
+        scala:
+          - 2.9.3
+        jdk:
+          - openjdk8
+    - language: lua
+        lua:
+          - 1.0.5
+    - language: rust
+        rust:
+          - 2.6
+          - jruby
+  
+notifications:
+  email:
+    - ppenmet@ncsu.edu
+    - sadhika2@ncsu.edu
+    - sray9@ncsu.edu
+    - nshukla2@ncsu.edu
+
+install:
+  - scalac GameofLife.scala
+  
+script:
+  - echo "ToDO"
+
+before_install:
+  - echo "Testing"
+  
+after_success:
+  - echo "Test Success"
