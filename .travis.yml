@@ -1,18 +1,10 @@
 matrix:
   include:
     - language: scala
-        scala:
-          - 2.9.3
-        jdk:
-          - openjdk8
-    - language: lua
-        lua:
-          - 1.0.5
-    - language: rust
-        rust:
-          - 2.6
-          - jruby
-  
+    -  scala:
+      - 2.9.3
+    -  jdk:
+      - openjdk8
 notifications:
   email:
     - ppenmet@ncsu.edu
