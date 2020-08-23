@@ -27,13 +27,12 @@ matrix:
     - language: rust
       rust:
         - 1.45.2
-      install:
-        -
-      script:
-        - echo "ToDO"
       before_install:
         - cd Rust
         - echo "Testing"
+      script:
+        - cargo build --verbose --all
+        - cargo test --verbose --all        
       after_success:
         - echo "Test Success"
 
