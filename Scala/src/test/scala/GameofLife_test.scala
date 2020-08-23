@@ -9,7 +9,7 @@ class GameTest  extends FunSpec with Matchers  {
     matrix(0)(1) = 0
     matrix(1)(0) = 0
     matrix(1)(1) = 0
-    new GameofLife().Live(matrix, 5, 5, 2).sameElements(matrix)
+    new GameofLife().Live(matrix, 2, 2, 2).sameElements(matrix)
   }
 
   it ("Computes Small Matrix Correctly") {
