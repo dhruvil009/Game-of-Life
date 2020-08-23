@@ -29,6 +29,7 @@ matrix:
         - 1.45.2
       before_install:
         - cd Rust
+        - cd hw2
         - echo "Testing"
       script:
         - cargo build --verbose --all
