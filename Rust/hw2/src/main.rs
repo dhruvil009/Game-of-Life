@@ -7,6 +7,7 @@ use array2d::Array2D;
 #[cfg(test)]
 mod test;
 
+// main function
 fn main() {
     
     let rows:i16 = 5;
@@ -15,6 +16,7 @@ fn main() {
     life(rows, cols, generations)
 }
 
+// function to initialize an array
 fn life(rows:i16, cols:i16, generations:i16){
     let some: f32 = 0.629;
     let mut rng = rand::thread_rng();
@@ -35,11 +37,9 @@ fn life(rows:i16, cols:i16, generations:i16){
     let _new_mat = live( rows, cols, generations,_array);
 }
 
+// function to move through generations with rules
 fn live(rows:i16, cols:i16, mut gen:i16, mut _array:Vec<Vec<i16>>) -> Vec<Vec<i16>> { 
 
-    // if gen<1 {
-    //     return;
-    // }
     clear();
     thread::sleep(time::Duration::from_millis(300));
    
@@ -112,6 +112,7 @@ fn live(rows:i16, cols:i16, mut gen:i16, mut _array:Vec<Vec<i16>>) -> Vec<Vec<i1
 
 }
 
+// function to clear the terminal
 pub fn clear() {
     io::stdout().write_all("\x1b[2J\x1b[1;1H".as_bytes()).unwrap()
 }
