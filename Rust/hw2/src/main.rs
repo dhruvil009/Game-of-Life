@@ -4,6 +4,9 @@ use std::io::{self, Write};
 use std::{thread, time};
 use array2d::Array2D;
 
+#[cfg(test)]
+mod test;
+
 fn main() {
     
     let rows:i16 = 5;
@@ -29,14 +32,14 @@ fn life(rows:i16, cols:i16, generations:i16){
             }
         }
     }
-    live( rows, cols, generations,_array);
+    let _new_mat = live( rows, cols, generations,_array);
 }
 
-fn live(rows:i16, cols:i16, mut gen:i16, mut _array:Vec<Vec<i16>>) { 
+fn live(rows:i16, cols:i16, mut gen:i16, mut _array:Vec<Vec<i16>>) -> Vec<Vec<i16>> { 
 
-    if gen<1 {
-        return;
-    }
+    // if gen<1 {
+    //     return;
+    // }
     clear();
     thread::sleep(time::Duration::from_millis(300));
    
@@ -101,7 +104,11 @@ fn live(rows:i16, cols:i16, mut gen:i16, mut _array:Vec<Vec<i16>>) {
     }
 
     gen -= 1;
-    live(rows, cols, gen, _next_array);
+    if gen == 0 {
+        return _array;
+    }
+    let _new_mat = live(rows, cols, gen, _next_array);
+    return _new_mat;
 
 }
 
