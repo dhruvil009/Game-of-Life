@@ -5,7 +5,7 @@ import scala.Array.ofDim
 class GameTest  extends FunSpec with Matchers  {
   it ("Null Population Never changes") {
     var matrix = ofDim[Integer](5, 5)
-    new GameofLife().Live(matrix, 5, 5, 2) should be (matrix)
+    new GameofLife().Live(matrix, 5, 5, 2).sameElements(matrix)
   }
 
   it ("Computes Small Matrix Correctly") {
@@ -22,7 +22,7 @@ class GameTest  extends FunSpec with Matchers  {
     result(1)(0) = 0
     result(1)(1) = 1
 
-    new GameofLife().Live(matrix, 2, 2, 1) should be (result)
+    new GameofLife().Live(matrix, 2, 2, 1).sameElements(result)
   }
 
   it ("Computes Big Matrix Correctly") {
@@ -81,6 +81,7 @@ class GameTest  extends FunSpec with Matchers  {
     result(4)(3) = 0
     result(4)(4) = 0
 
-//new src.main.scala.GameofLife().Live(matrix, 2, 2, 1) should be (result)
+    new GameofLife().Live(matrix, 5, 5, 1).sameElements(result)
+
   }
 }
