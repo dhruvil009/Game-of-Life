@@ -1,3 +1,8 @@
 #ToDO: Include challenges for specific languages and their unique features here
 
 Scala:
+
+Rust:
+* There are not so many resources or questions answered for this language.
+* Debug tools are not easily available.
+* Since it's a primitive language, have to assign all the data types and explicitly  data conversion is needed.

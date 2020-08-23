@@ -19,7 +19,7 @@ The following is a set of guidelines for contributing to Project and its package
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by the [Code of Conduct](https://github.com/dhruvil009/HW01/blob/master/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior.
+This project and everyone participating in it is governed by the [Code of Conduct](https://github.com/dhruvil009/Game-of-Life/blob/master/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior.
 
 ## What should I know before I get started?
 
@@ -34,7 +34,7 @@ This project and everyone participating in it is governed by the [Code of Conduc
 
 
 ## You are contributing to this repository which is under Apache License: 🏅
-Refer [LICENSE](https://github.com/dhruvil009/HW01/blob/master/LICENSE) for more information
+Refer [LICENSE](https://github.com/dhruvil009/Game-of-Life/blob/master/LICENSE) for more information
 
 
 ## Styleguides

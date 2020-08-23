@@ -12,7 +12,13 @@ Please follow installation instructions: <br />
 https://jesselawson.org/rust/installing-rust-on-windows/
 <br />
 <br />
+To clone from this repo: <br />
+git clone https://github.com/dhruvil009/Game-of-Life.git
+<br />
+<br />
 To the run the file: <br />
+cd Rust
+<br />
 cd hw2
 <br />
 cargo build
