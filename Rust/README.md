@@ -20,5 +20,5 @@ cargo build
 cargo run
 <br />
 <br />
-To test the code:
+To test the code: <br />
 cargo test
