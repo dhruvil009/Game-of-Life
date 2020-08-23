@@ -18,3 +18,7 @@ cd hw2
 cargo build
 <br />
 cargo run
+<br />
+<br />
+To test the code:
+cargo test
