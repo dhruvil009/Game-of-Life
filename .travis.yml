@@ -7,9 +7,6 @@ matrix:
         - openjdk8
       before_install:
         - cd Scala
-        - echo "Testing"
-      after_success:
-        - echo "Test Success"
 #
 #    - language: lua
 #      lua:
@@ -30,12 +27,9 @@ matrix:
       before_install:
         - cd Rust
         - cd hw2
-        - echo "Testing"
       script:
         - cargo build --verbose --all
-        - cargo test --verbose --all        
-      after_success:
-        - echo "Test Success"
+        - cargo test --verbose --all
 
 notifications:
   email:
