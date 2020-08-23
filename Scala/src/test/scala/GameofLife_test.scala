@@ -4,7 +4,11 @@ import scala.Array.ofDim
 
 class GameTest  extends FunSpec with Matchers  {
   it ("Null Population Never changes") {
-    var matrix = ofDim[Integer](5, 5)
+    var matrix = ofDim[Integer](2, 2)
+    matrix(0)(0) = 0
+    matrix(0)(1) = 0
+    matrix(1)(0) = 0
+    matrix(1)(1) = 0
     new GameofLife().Live(matrix, 5, 5, 2).sameElements(matrix)
   }
 
