@@ -1,7 +1,7 @@
 local GameOfLifeTest = {}
 
 require('luaunit')
-GOL = require('/src/GameOfLife')
+GOL = require('GameOfLife')
 
 TestMyCode = {} --class
     function TestMyCode:testFirstGenerationType()
