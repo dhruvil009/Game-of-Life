@@ -31,5 +31,36 @@ Run as follows on terminal -
 
 $ lua helloWorld
 
+# Running Lua using Visual Studio Code
+* Open a folder in a workspace in VSCode
+
+* In that folder, create a sample Lua file - can make the same helloWorld.lua file from previous steps.
+
+* Create a file named "tasks.json" in the same folder and paste the following content - 
+
+```
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Lua",
+      "type": "shell",
+      "command": "lua53",
+      "args": [
+        "${file}"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
+
+```
+* Open the helloWorld.lua file and run ctrl+shift+B from your keyboard or go to terminal from menu bar on the top of VSCode and Run build task.
+* You should see the output in VSCode terminal.
+
+
 
 
