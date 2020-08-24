@@ -1,8 +1,8 @@
 import scala.Array.ofDim
 import scala.util.Random
 
-class GameofLife {
-  def Play(args: Array[String]): Array[Array[Integer]] = {
+object Main {
+  def main(args: Array[String]): Unit = {
     Life(5, 5)
   }
 

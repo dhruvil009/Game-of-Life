@@ -22,8 +22,8 @@ fn life(rows:i16, cols:i16, generations:i16){
     let mut rng = rand::thread_rng();
     let mut _array = vec![vec![0; cols as usize]; rows as usize];
     
-    for r in 0..rows-1{
-        for c in 0..cols-1{
+    for r in 0..rows-2{
+        for c in 0..cols-2{
             if rng.gen_range(0.0, 1.0) > some
             {
                 _array[r as usize][c as usize] = 1;
@@ -65,8 +65,8 @@ fn live(rows:i16, cols:i16, mut gen:i16, mut _array:Vec<Vec<i16>>) -> Vec<Vec<i1
     for r in 0..rows{
         for c in 0..cols{
             _neighbors = 0;
-            for a in -1..2 {
-                for b in -1..2 {
+            for a in -1..1 {
+                for b in -1..1 {
                     let current_row =  r as i16 + a as i16 ;
                     let current_col =  c as i16 + b as i16 ;
                     if current_row < 0 || current_col < 0 {
@@ -104,7 +104,7 @@ fn live(rows:i16, cols:i16, mut gen:i16, mut _array:Vec<Vec<i16>>) -> Vec<Vec<i1
     }
 
     gen -= 1;
-    if gen == 0 {
+    if gen == 1 {
         return _array;
     }
     let _new_mat = live(rows, cols, gen, _next_array);

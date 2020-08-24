@@ -2,34 +2,34 @@
 The implementation for Conway's Game of Life in Lua
 
 # Running LUA on LINUX 
-$ wget http://www.lua.org/ftp/lua-5.2.3.tar.gz
+* $ wget http://www.lua.org/ftp/lua-5.2.3.tar.gz
 
-$ tar zxf lua-5.2.3.tar.gz
+* $ tar zxf lua-5.2.3.tar.gz
 
-$ cd lua-5.2.3
+* $ cd lua-5.2.3
 
-$ make linux test
+* $ make linux test
 
 
 # Running LUA on MAC OS X
-$ curl -R -O http://www.lua.org/ftp/lua-5.2.3.tar.gz
+* $ curl -R -O http://www.lua.org/ftp/lua-5.2.3.tar.gz
 
-$ tar zxf lua-5.2.3.tar.gz
+* $ tar zxf lua-5.2.3.tar.gz
 
-$ cd lua-5.2.3
+* $ cd lua-5.2.3
 
-$ make macosx test
+* $ make macosx test
 
 
 # Testing if LUA is intalled or not
-Save the following code in the file name - helloWorld.lua
+* Save the following code in the file name - helloWorld.lua
 
-print("Hello World!) -- comment using "--"
+* print("Hello World!) -- comment using "--"
 
 
-Run as follows on terminal - 
+* Run as follows on terminal - 
 
-$ lua helloWorld
+* $ lua helloWorld
 
 # Running Lua using Visual Studio Code
 * Open a folder in a workspace in VSCode
