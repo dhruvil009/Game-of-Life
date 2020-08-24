@@ -19,7 +19,7 @@ The implementation for Conway's Game of Life in Scala
 	   	   
 
 
-##To Run Game of Life:
+#To Run Game of Life:
 
 	1. Clone the git hub repository 
 	   git clone https://github.com/dhruvil009/Game-of-Life.git
@@ -29,6 +29,3 @@ The implementation for Conway's Game of Life in Scala
 	
 	3. Execution
        scala src.main.scala.GameofLife
-    
-##Testing:
-    ToDo
