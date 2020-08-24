@@ -1,6 +1,9 @@
 #ToDO: Include challenges for specific languages and their unique features here
 
 Scala:
+* Compilation speed is slow
+* Documentation of the language is limited. Also, limited online communities presence .
+* A working knowledge of java is required to be able to quickly grasp Scala
 
 Rust:
 * There are not so many resources or questions answered for this language.
