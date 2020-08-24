@@ -1,14 +1,14 @@
 import scala.Array.ofDim
 import scala.util.Random
 
-object Main {
+object GameOfLife {
   def main(args: Array[String]): Unit = {
     Life(5, 5)
   }
 
   def print_matrix(generation: Array[Array[Integer]], rows: Int, cols: Int) = {
-    for (i <- 0 to rows - 1) {
-      for (j <- 0 to cols - 1) {
+    for (i <- 0 to rows - 2) {
+      for (j <- 0 to cols - 2) {
         if (generation(i)(j) == 1)
           print("o")
         else
@@ -30,7 +30,7 @@ object Main {
   }
 
   def Live(generation: Array[Array[Integer]], rows: Int, cols: Int, gen: Int): Array[Array[Integer]] = {
-    if (gen == 0)
+    if (gen == 1)
       return generation
     println("Generation: " + gen)
     print_matrix(generation, rows, cols)
@@ -41,7 +41,7 @@ object Main {
         val rowstart = if (i != 0) i - 1 else i
         val rowend = if (i != rows - 1) i + 1 else i
         val colstart = if (j != 0) j - 1 else j
-        val colend = if (j != cols - 1) j + 1 else j
+        val colend = if (j != cols - 1) j else j
 
         for (row <- rowstart to rowend) {
           for (col <- colstart to colend) {
