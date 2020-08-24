@@ -7,19 +7,55 @@ matrix:
         - openjdk8
       before_install:
         - cd Scala
-#
-#    - language: lua
-#      lua:
-#        - 5.2.3
-#      install:
-#        -
-#      script:
-#        - echo "ToDo"
-#      before_install:
-#        - cd Lua
-#        - echo "Testing"
-#      after_success:
-#        - echo "Test Success"
+        
+# Changes for Lua - TESTING NOW
+
+    - language: c
+      sudo: false
+
+      os: linux
+
+      env:
+      global:
+        - LUAROCKS=3.3.1
+    matrix:
+      - LUA=lua5.1  LUANUMBER=double
+      - LUA=lua5.1  LUANUMBER=float
+      - LUA=lua5.2  LUANUMBER=double
+      - LUA=lua5.2  LUANUMBER=float
+      - LUA=lua5.3  LUANUMBER=double
+      - LUA=lua5.3  LUANUMBER=float
+      - LUA=lua5.4  LUANUMBER=double
+      - LUA=luajit     # latest stable version (2.0.x)
+      - LUA=luajit2.0  # current head of 2.0 branch
+      - LUA=luajit2.1  # current head of 2.1 branch
+
+    matrix:
+    # test Mac OS X, but limit it to a single build
+      include:
+        - os: osx
+          env: LUA=lua5.1 LUANUMBER=double
+  # 'bleeding edge' LuaJIT may fail without breaking the build
+    allow_failures:
+      - env: LUA=luajit2.0
+      - env: LUA=luajit2.1
+      - env: LUA=lua5.4 LUANUMBER=double
+
+    before_install:
+      - source .travis/setenv_lua.sh
+      - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install -y libxml2-utils; fi
+      
+    after_success:
+      - luacov-coveralls -v --include %./luaunit.lua
+
+# cache:
+#   directories:
+#     - $TRAVIS_BUILD_DIR/install
+
+    script: 
+      - lua -v -lluacov run_unit_tests.lua --shuffle
+      - lua run_functional_tests.lua --coverage
+      - luacheck *.lua test/
 
     - language: rust
       rust:
@@ -30,6 +66,9 @@ matrix:
       script:
         - cargo build --verbose --all
         - cargo test --verbose --all
+        
+        
+        
 
 notifications:
   email:
