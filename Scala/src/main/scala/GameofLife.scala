@@ -56,6 +56,7 @@ object GameOfLife {
           nextGen(i)(j) = if (neighbours == 2 || neighbours == 3) 1 else 0
       }
     }
+    
     Live(nextGen, rows, cols, gen - 1)
   }
 }
