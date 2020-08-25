@@ -15,7 +15,8 @@ Lua -
 3. The test subjects are also given a survey to fill out about their experience with the language.
 </br>
 </br>
-## Group:
+</br>
+Group:
 1. [Dhruvil Shah](mailto:dshah4@ncsu.edu) (dshah4)<br>
 2. [Neeraj Shukla](mailto:nshukla2@ncsu.edu) (nshukla2)<br>
 3. [Poorvaja Penmetsa](mailto:ppenmet@ncsu.edu) (ppenmet)<br>
