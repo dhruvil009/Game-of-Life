@@ -4,7 +4,7 @@
 
 The implementation for Conway's Game of Life
 </br>
-## Working with Test Subjectts:
+## Working with Test Subjects:
 1. We created Repl links with each langauge: 
 Rust - https://repl.it/join/cuuikums-ppenmetsa </br>
 Scala -  https://repl.it/@SreemoyeeRay/GameOfLife </br>
