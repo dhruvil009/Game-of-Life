@@ -16,7 +16,7 @@ Lua -
 </br>
 </br>
 </br>
-Group:
+Group: <br>
 1. [Dhruvil Shah](mailto:dshah4@ncsu.edu) (dshah4)<br>
 2. [Neeraj Shukla](mailto:nshukla2@ncsu.edu) (nshukla2)<br>
 3. [Poorvaja Penmetsa](mailto:ppenmet@ncsu.edu) (ppenmet)<br>
