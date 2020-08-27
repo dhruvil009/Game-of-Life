@@ -8,7 +8,7 @@ The implementation for Conway's Game of Life
 1. We created Repl links with each langauge: </br>
 Rust - https://repl.it/join/cuuikums-ppenmetsa </br>
 Scala -  https://repl.it/@SreemoyeeRay/GameOfLife </br>
-Lua - 
+Lua - https://repl.it/@lotusneera/GameOfLifeinLua
 </br>
 2. We scheduled 2 monitors to monitor each test subject while they are debugging
 </br>
