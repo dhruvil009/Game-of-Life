@@ -8,9 +8,9 @@ Learning: This folder contains information giving the tester a basic introductio
 GameOfLife: This folder contains the GOL code 
 
 Links to repl environment:
-Scala: https://repl.it/@SreemoyeeRay/GameOfLife
-Lua: https://repl.it/@lotusneera/GameOfLifeinLua
-Rust: https://repl.it/join/cuuikums-ppenmetsa
+Scala: https://repl.it/@SreemoyeeRay/GameOfLife </br>
+Lua: https://repl.it/@lotusneera/GameOfLifeinLua </br>
+Rust: https://repl.it/join/cuuikums-ppenmetsa </br>
 
 
 ## Testing Process
@@ -23,16 +23,16 @@ Rust: https://repl.it/join/cuuikums-ppenmetsa
 
 
 ## Observations made
-To understand the tester's approach to debugging the new language, we:
-1. Asked some of the following questions:
-	a. How comfortable are you feeling with the syntax and semantics of the language?
-	b. Are you trying to look at the logic of the code or the syntax?
-	c. Does this language feel similar to any of the languages you are familiar with?
-2. Observed the following and made notes:
-	a. Total time taken by the tester to debug the code
-	b. Number of bugs the tester was able to identify
-	c. Number of bugs the tester was able to fix
-	d. How many times the tester executed the code
-	e. If the tester was comfortably changing the code or was cautious to make any changes
-	f. If the tester was trying to understand every line of code sequentially or trying to zoom in on the bugs by analyzing the output
+To understand the tester's approach to debugging the new language, we: </br>
+1. Asked some of the following questions: </br>
+	a. How comfortable are you feeling with the syntax and semantics of the language? </br>
+	b. Are you trying to look at the logic of the code or the syntax? </br>
+	c. Does this language feel similar to any of the languages you are familiar with? </br>
+2. Observed the following and made notes: </br>
+	a. Total time taken by the tester to debug the code </br>
+	b. Number of bugs the tester was able to identify </br>
+	c. Number of bugs the tester was able to fix </br>
+	d. How many times the tester executed the code </br>
+	e. Was the tester comfortable in changing the code or were they cautious to make any changes </br> 
+	f. Was the tester trying to understand every line of code sequentially or trying to zoom in on the bugs by analyzing the output </br>
 
