@@ -34,7 +34,7 @@ Looking at the data we have collected, we came to conclude that "Lua" is the eas
 <br>
 <br>
 ## Threats To Validty 
-<br> <br>
+
 During this experiment, we have observed five main threats to our validity. 
 <br> <br>
 When we conducted unit testing on all our 3 languages, we didn’t granularize to the operations being performed in each iteration. 
