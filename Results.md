@@ -37,7 +37,7 @@ Looking at the data we have collected, we came to conclude that "Lua" is the eas
 
 During this experiment, we have observed five main threats to our validity. 
 <br> <br>
-When we conducted unit testing on all our 3 languages, we didn’t granularize to the operations being performed in each iteration. 
+When we conducted unit testing on all our 3 languages, we didn’t granularize to the operations being performed in each iteration. This may mean that there is some difference in our executions for the intra-generation operations between the three languages.
 <br> <br>
 We also didn’t conduct research into the parameters used conducting a coding experiment with human subjects. The parameters we used while taking notes: Time taken to debug, Number of bugs found, Number of bus fixed; these were based on our experience, thus are subjective.
 <br> <br>
