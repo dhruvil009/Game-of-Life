@@ -1,6 +1,6 @@
 ## Testing Infrastructure Setup
 Our team used the online IDE, Editor and Compiler, REPL to set up the testing infrastructure.
-We create repositories hosting the Game of Life code along with other required dependencies and some learning material.
+We created repositories hosting the Game of Life code along with other required dependencies and some learning material.
 
 Following is the structure of the testing environment:
 README.md: This file gives an introduction to the setup, the folder structure, commands to execute the code and survey link.
