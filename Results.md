@@ -34,16 +34,17 @@ Looking at the data we have collected, we came to conclude that "Lua" is the eas
 <br>
 <br>
 ## Threats To Validty 
+<br> <br>
 During this experiment, we have observed five main threats to our validity. 
-<br>
+<br> <br>
 When we conducted unit testing on all our 3 languages, we didn’t granularize to the operations being performed in each iteration. 
-<br>
+<br> <br>
 We also didn’t conduct research into the parameters used conducting a coding experiment with human subjects. The parameters we used while taking notes: Time taken to debug, Number of bugs found, Number of bus fixed; these were based on our experience, thus are subjective.
-<br>
+<br> <br>
 When testing with our subjects, we did not flesh out a standard for the notes being taken. Some of us recorded the exact time a subject changed a line in their code while others recorded the time when they ran the code. Using automation to do this would have made this process much smoother and given the experiment more validity.  
-<br>
+<br> <br>
 Our use of google forms to attain the information from the subject made our data points more subjective than if we were to use standardized notes.
-<br>
+<br> <br>
 We also didn’t provide the subjects with any test cases. They only had one input to debug the code and they didn’t know what the output should look like. This may have been the reason behind some people taking longer to debug. It would mean that the values for time taken are skewed.
 
 
